@@ -11,15 +11,15 @@ const upperFirstWord = function (str) {
 };
 
 // Create higher order function
-const strTransform = function (str, fn) {
+const transformText = function (str, fn) {
   console.log(`Original string: ${str}`);
   console.log(`Transformed string: ${fn(str)}`);
   console.log(`Tranformed by: ${fn.name}`);
 };
 
 const text = 'JavaScript is the best!';
-strTransform(text, upperFirstWord);
+transformText(text, upperFirstWord);
 console.log();
 
-strTransform(text, oneWord);
+transformText(text, oneWord);
 console.log();
