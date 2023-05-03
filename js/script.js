@@ -13,3 +13,4 @@ const createBookings = function (flightNum, numPassangers, fare) {
 
 createBookings('BH123', 2, 199);
 console.log();
+createBookings();
