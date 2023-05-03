@@ -16,3 +16,7 @@ const strTransform = function (str, fn) {
   console.log(`Transformed string: ${fn(str)}`);
   console.log(`Tranformed by: ${fn.name}`);
 };
+
+const text = 'JavaScript is the best!';
+strTransform(text, upperFirstWord);
+console.log();
