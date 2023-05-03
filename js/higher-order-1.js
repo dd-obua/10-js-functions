@@ -20,3 +20,6 @@ const strTransform = function (str, fn) {
 const text = 'JavaScript is the best!';
 strTransform(text, upperFirstWord);
 console.log();
+
+strTransform(text, oneWord);
+console.log();
