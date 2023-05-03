@@ -23,3 +23,5 @@ console.log();
 
 transformText(text, oneWord);
 console.log();
+
+const high5 = () => console.log('👋');
