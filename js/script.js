@@ -5,7 +5,11 @@ console.log();
 // Default parameters
 const bookings = [];
 
-const createBookings = function (flightNum, numPassangers = 1, fare = 199) {
+const createBookings = function (
+  flightNum,
+  numPassangers = 1,
+  fare = 199 * numPassangers
+) {
   const booking = { flightNum, numPassangers, fare };
   bookings.push(booking);
   console.log('Bookings:', bookings);
@@ -14,4 +18,10 @@ const createBookings = function (flightNum, numPassangers = 1, fare = 199) {
 createBookings('BH123', 2, 199);
 console.log();
 createBookings('BH124');
+console.log();
+createBookings('BH125', 2, 800);
+console.log();
+createBookings('BH126', 2);
+console.log();
+createBookings('BH127', 5);
 console.log();
