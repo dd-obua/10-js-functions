@@ -2,4 +2,4 @@
 
 'use strict';
 
-const oneWord = str => str.replace(/ /g, '');
+const oneWord = str => str.replace(/ /g, '').toLowerCase();
