@@ -52,3 +52,6 @@ bookLX(584, 'James Cooper');
 const bookEA23 = book.bind(eagleAir, 23);
 bookEA23('Denis Obua');
 bookEA23('Geoffrey Okello');
+
+// With event listeners
+otaraAir.planes = 300;
