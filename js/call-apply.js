@@ -21,6 +21,7 @@ const otaraAir = { airline: 'Omolo Air', iataCode: 'OA', bookings: [] };
 
 const book = eagleAir.book;
 
+// Use call method
 book.call(otaraAir, 808, 'Sarah Olega');
 book.call(eagleAir, 345, 'John Doe');
 console.log(eagleAir);
