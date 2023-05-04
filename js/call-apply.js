@@ -42,5 +42,8 @@ book.apply(swiss, flightData);
 book.call(swiss, ...flightData);
 
 // Use bind
+// Point 'this' to all the airlines
+const bookEA = book.bind(eagleAir);
+const bookOA = book.bind(otaraAir);
 const bookLX = book.bind(swiss);
 bookLX(584, 'James Cooper');
