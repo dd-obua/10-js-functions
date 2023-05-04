@@ -72,3 +72,12 @@ console.log(addTax(0.1, 200));
 
 const addVAT = addTax.bind(null, 0.23); // null is passed in the place of 'this'
 console.log(addVAT(100));
+
+const addTax2 = function (rate) {
+  return function (value) {
+    return value + value * rate;
+  };
+};
+
+const addVAT2 = addTax2(0.23);
+console.log(addVAT2(200));
