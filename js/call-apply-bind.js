@@ -61,3 +61,7 @@ otaraAir.buyPlane = function () {
   this.planes++;
   console.log(`A total of ${this.planes} planes now.`);
 };
+
+// On an event listener, this points to the selected DOM object
+const buy = document.querySelector('.buy');
+buy.addEventListener('click', otaraAir.buyPlane.bind(otaraAir));
