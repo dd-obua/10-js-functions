@@ -40,3 +40,6 @@ const flightData = [582, 'Mary Cooper'];
 book.apply(swiss, flightData);
 
 book.call(swiss, ...flightData);
+
+// Use bind
+const bookLX = book.bind(swiss);
