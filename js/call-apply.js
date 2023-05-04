@@ -34,3 +34,5 @@ const swiss = {
 };
 
 book.call(swiss, 583, 'Mary Cooper');
+
+// Use apply
