@@ -43,3 +43,4 @@ book.call(swiss, ...flightData);
 
 // Use bind
 const bookLX = book.bind(swiss);
+bookLX(584, 'James Cooper');
