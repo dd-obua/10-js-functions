@@ -55,3 +55,9 @@ bookEA23('Geoffrey Okello');
 
 // With event listeners
 otaraAir.planes = 300;
+
+otaraAir.buyPlane = function () {
+  console.log(this);
+  this.planes++;
+  console.log(`A total of ${this.planes} planes now.`);
+};
