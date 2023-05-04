@@ -33,6 +33,8 @@ const swiss = {
   bookings: [],
 };
 
-book.call(swiss, 583, 'Mary Cooper');
+book.call(swiss, 583, 'John Cooper');
 
 // Use apply
+const flightData = [582, 'Mary Cooper'];
+book.apply(swiss, flightData);
