@@ -47,3 +47,7 @@ const bookEA = book.bind(eagleAir);
 const bookOA = book.bind(otaraAir);
 const bookLX = book.bind(swiss);
 bookLX(584, 'James Cooper');
+
+const bookEA23 = book.bind(eagleAir, 23);
+bookEA23('Denis Obua');
+bookEA23('Geoffrey Okello');
