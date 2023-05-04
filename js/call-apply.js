@@ -9,6 +9,7 @@ const eagleAir = {
     console.log(
       `${name} booked a flight on ${this.airline}, flight ${this.iataCode}${flightNum}.`
     );
+    this.bookings.push({ flight: `${this.iataCode}${flightNum}`, name });
   },
 };
 
