@@ -18,3 +18,7 @@ console.log(greetHi('Patience'));
 
 // Combine function calls
 console.log(greet('Hello')('Denis'));
+
+// Refactor greet in another function
+const greetArrow = greeting => name => `${greeting} ${name}!`;
+console.log(greetArrow('Good morning')('Sir'));
