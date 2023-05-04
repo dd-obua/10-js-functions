@@ -17,4 +17,4 @@ eagleAir.book(123, 'Severino Ojara');
 eagleAir.book(456, 'John Wonekha');
 console.log('Bookings:', eagleAir.bookings);
 
-const otaraAir = { flight: 'Omolo Air', iataCode: 'OA', bookings: [] };
+const otaraAir = { airline: 'Omolo Air', iataCode: 'OA', bookings: [] };
