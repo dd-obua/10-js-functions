@@ -1,4 +1,4 @@
-// Functions that accepts other functions as inputs
+// Functions that accepts other functions (callbacks) as inputs
 
 'use strict';
 console.log();
