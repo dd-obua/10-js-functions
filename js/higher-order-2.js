@@ -7,3 +7,6 @@ const greet = function (greeting) {
 };
 
 const greetHey = greet('Hey');
+
+greetHey('John');
+greetHey('Charles');
