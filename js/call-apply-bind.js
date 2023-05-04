@@ -71,3 +71,4 @@ const addTax = (rate, value) => value + value * rate;
 console.log(addTax(0.1, 200));
 
 const addVAT = addTax.bind(null, 0.23); // null is passed in the place of 'this'
+console.log(addVAT(100));
