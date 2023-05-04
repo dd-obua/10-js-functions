@@ -15,3 +15,4 @@ const eagleAir = {
 
 eagleAir.book(123, 'Severino Ojara');
 eagleAir.book(456, 'John Wonekha');
+console.log('Bookings:', eagleAir.bookings);
