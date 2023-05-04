@@ -25,3 +25,9 @@ book.call(otaraAir, 808, 'Sarah Olega');
 book.call(eagleAir, 345, 'John Doe');
 console.log(eagleAir);
 console.log(otaraAir);
+
+const swiss = {
+  airline: 'Swiss Air Lines',
+  iataCode: 'LX',
+  bookings: [],
+};
