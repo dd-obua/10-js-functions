@@ -38,3 +38,5 @@ book.call(swiss, 583, 'John Cooper');
 // Use apply
 const flightData = [582, 'Mary Cooper'];
 book.apply(swiss, flightData);
+
+book.call(swiss, ...flightData);
