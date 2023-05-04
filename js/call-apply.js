@@ -1,5 +1,5 @@
 // Implementing call and apply methods
-'use strict';
+// 'use strict';
 
 const eagleAir = {
   airline: 'Eagle Air',
@@ -18,3 +18,5 @@ eagleAir.book(456, 'John Wonekha');
 console.log('Bookings:', eagleAir.bookings);
 
 const otaraAir = { airline: 'Omolo Air', iataCode: 'OA', bookings: [] };
+
+const book = eagleAir.book;
