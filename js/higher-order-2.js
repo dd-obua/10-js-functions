@@ -3,7 +3,7 @@
 'use strict';
 
 const greet = function (greeting) {
-  return name => console.log(`${greet} ${name}!`);
+  return name => console.log(`${greeting} ${name}!`);
 };
 
 const greetHey = greet('Hey');
