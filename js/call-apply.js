@@ -20,3 +20,6 @@ console.log('Bookings:', eagleAir.bookings);
 const otaraAir = { airline: 'Omolo Air', iataCode: 'OA', bookings: [] };
 
 const book = eagleAir.book;
+
+book.call(otaraAir, 808, 'Sarah Olega');
+book.call(eagleAir, 345, 'John Doe');
