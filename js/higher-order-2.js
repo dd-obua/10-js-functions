@@ -2,7 +2,11 @@
 
 'use strict';
 
-const greet = greeting => name => `${greeting} ${name}!`;
+const greet = function (greeting) {
+  return function (name) {
+    return `${greeting} ${name}!`;
+  };
+};
 
 const greetHey = greet('Hey');
 console.log(greetHey('John'));
