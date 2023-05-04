@@ -13,3 +13,6 @@ console.log(greetHey('Charles'));
 const greetHi = greet('Hi');
 console.log(greetHi('Flora'));
 console.log(greetHi('Patience'));
+
+// Combine function calls
+console.log(greet('Hello')('Denis'));
