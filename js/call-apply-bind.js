@@ -65,3 +65,7 @@ otaraAir.buyPlane = function () {
 // On an event listener, this points to the selected DOM object
 const buy = document.querySelector('.buy');
 buy.addEventListener('click', otaraAir.buyPlane.bind(otaraAir));
+
+// Partial applications (pre-setting parameters)
+const addTax = (rate, value) => value + value * rate;
+console.log(addTax(0.1, 200));
