@@ -20,6 +20,12 @@ const poll = {
       answer < this.answers.length &&
       this.answers[answer]++;
   },
+
+  displayResults(type = 'array') {
+    type === 'array'
+      ? console.log(this.answers)
+      : console.log(`Poll results are ${this.answers.join(', ')}`);
+  },
 };
 
 const answerPoll = document.querySelector('.poll');
