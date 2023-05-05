@@ -19,8 +19,6 @@ const poll = {
       answer >= 0 &&
       answer < this.answers.length &&
       this.answers[answer]++;
-
-    console.log(this.answers);
   },
 };
 
