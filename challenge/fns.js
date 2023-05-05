@@ -11,6 +11,7 @@ const poll = {
     const input = prompt(
       `${this.question}]\n${this.options.join('\n')}\n(Write option number)`
     );
+    const answer = Number(input);
   },
 };
 
