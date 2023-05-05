@@ -15,6 +15,8 @@ const poll = {
         3: C++
         (Write option number)
     `);
+
+    const inputValue = Number(input);
   },
 };
 
