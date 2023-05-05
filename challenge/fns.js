@@ -35,6 +35,10 @@ const poll = {
       console.log(inputValue, this.answers);
     }
   },
+
+  displayResults() {
+    
+  },
 };
 
 const answerPoll = document.querySelector('.poll');
