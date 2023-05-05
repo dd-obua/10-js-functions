@@ -8,19 +8,11 @@ const poll = {
 
   registerNewAnswer() {
     // Get answer
-    const answer = Number(
-      prompt(
-        `${this.question}\n${this.options.join('\n')}\n(Write option number)`
-      )
+    const input = prompt(
+      `${this.question}]\n${this.options.join('\n')}\n(Write option number)`
     );
-  },
-
-  displayResults(type) {
-    const results = type || type.toString().replaceAll(',', ', ');
-    console.log('Poll results are:', results);
   },
 };
 
 const answerPoll = document.querySelector('.poll');
-
 answerPoll.addEventListener('click', poll.registerNewAnswer.bind(poll));
