@@ -7,32 +7,14 @@ const poll = {
   answers: new Array(4).fill(0),
 
   registerNewAnswer() {
-    const input = Number(
-      prompt(`
+    const input = prompt(`
         What is your favourite programming language?
         0: JavaScript
         1: Python
         2: Rust
         3: C++
         (Write option number)
-    `)
-    );
-
-    switch (input) {
-      case 0:
-        this.answers[0]++;
-        break;
-      case 1:
-        this.answers[1]++;
-        break;
-      case 2:
-        this.answers[2]++;
-        break;
-      case 3:
-        this.answers[3]++;
-      default:
-        'Invalid input';
-    }
+    `);
   },
 };
 
