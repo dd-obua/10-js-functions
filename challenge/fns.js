@@ -19,6 +19,9 @@ const poll = {
       answer >= 0 &&
       answer < this.answers.length &&
       this.answers[answer]++;
+
+    this.displayResults();
+    this.displayResults('string');
   },
 
   displayResults(type = 'array') {
