@@ -12,6 +12,13 @@ const poll = {
       `${this.question}]\n${this.options.join('\n')}\n(Write option number)`
     );
     const answer = Number(input);
+
+    // Apply short circuiting with &&
+    input &&
+      typeof answer === 'number' &&
+      answer >= 0 &&
+      answer < this.answers.length &&
+      this.answers[answer]++;
   },
 };
 
