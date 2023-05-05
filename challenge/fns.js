@@ -20,16 +20,16 @@ const poll = {
 
     switch (input) {
       case 0:
-        answers[0]++;
+        this.answers[0]++;
         break;
       case 1:
-        answers[1]++;
+        this.answers[1]++;
         break;
       case 2:
-        answers[2]++;
+        this.answers[2]++;
         break;
       case 3:
-        answers[3]++;
+        this.answers[3]++;
       default:
         'Invalid input';
     }
