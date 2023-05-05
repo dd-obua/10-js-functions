@@ -32,8 +32,11 @@ const poll = {
         case 3:
           this.answers[3]++;
       }
+      console.log(inputValue, this.answers);
     }
   },
 };
 
 const answerPoll = document.querySelector('.poll');
+
+answerPoll.addEventListener('click', poll.registerNewAnswer.bind(poll));
