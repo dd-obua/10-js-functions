@@ -19,6 +19,19 @@ const poll = {
     const inputValue = Number(input);
 
     if (input && inputValue >= 0 && inputValue <= 3) {
+      switch (inputValue) {
+        case 0:
+          this.answers[0]++;
+          break;
+        case 1:
+          this.answers[1]++;
+          break;
+        case 2:
+          this.answers[2]++;
+          break;
+        case 3:
+          this.answers[3]++;
+      }
     }
   },
 };
