@@ -36,4 +36,4 @@ const poll = {
   },
 };
 
-poll.registerNewAnswer();
+const answerPoll = document.querySelector('.poll');
