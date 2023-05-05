@@ -8,28 +8,11 @@ const poll = {
 
   registerNewAnswer() {
     // Get answer
-    const input = prompt(
-      `${this.question}\n${this.options.join('\n')}\n(Write option number)`
+    const answer = Number(
+      prompt(
+        `${this.question}\n${this.options.join('\n')}\n(Write option number)`
+      )
     );
-
-    const inputValue = Number(input);
-
-    if (input && inputValue >= 0 && inputValue <= 3) {
-      switch (inputValue) {
-        case 0:
-          this.answers[0]++;
-          break;
-        case 1:
-          this.answers[1]++;
-          break;
-        case 2:
-          this.answers[2]++;
-          break;
-        case 3:
-          this.answers[3]++;
-      }
-    }
-    this.displayResults(this.answers);
   },
 
   displayResults(type) {
