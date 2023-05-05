@@ -17,6 +17,22 @@ const poll = {
         (Write option number)
     `)
     );
+
+    switch (input) {
+      case 0:
+        answers[0]++;
+        break;
+      case 1:
+        answers[1]++;
+        break;
+      case 2:
+        answers[2]++;
+        break;
+      case 3:
+        answers[3]++;
+      default:
+        'Invalid input';
+    }
   },
 };
 
