@@ -7,6 +7,7 @@ const poll = {
   answers: new Array(4).fill(0),
 
   registerNewAnswer() {
+    // Get answer
     const input = prompt(
       `${this.question}\n${this.options.join('\n')}\n(Write option number)`
     );
