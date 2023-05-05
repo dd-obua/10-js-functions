@@ -33,6 +33,7 @@ const poll = {
           this.answers[3]++;
       }
     }
+    this.displayResults(this.answers);
   },
 
   displayResults(type) {
